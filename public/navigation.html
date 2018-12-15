@@ -1,0 +1,211 @@
+<style>
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+
+    .dropdown>.dropdown-toggle:active {
+        /*Without this, clicking will make it sticky*/
+        pointer-events: none;
+    }
+    nav ul {
+        text-align: center;
+        white-space: nowrap;
+    }
+   
+
+    nav{
+        position: relative;
+        background:linear-gradient(45deg, grey, #A9D4FF, #5CAEFF, grey)
+;
+    }
+    .body-wrap nav ul li .nav-link{
+        text-align: center;
+        color:#000;
+        font-weight: 700;
+        font-family: sans-serif, serif, 'Times New Roman';
+    }
+
+    aside {
+        top: 10px;
+        float: right;
+        list-style: none;
+        line-height: 1.25;
+        padding: 20px;
+        text-decoration: none;
+    }
+    h3 {
+        float: left;
+        top: 10px;
+        padding: 20px;
+        text-align: start;
+        font-family: sans-serif, serif, 'Times New Roman';
+
+    }
+     .pioneer {
+        position: relative;
+        top: 20px;
+        font-family: Brush Script MT, sans-serif,cursive, serif,monospace;
+        color:aliceblue;
+        font-size: 3.5em;
+        text-align: center;
+    }
+    .header, .body-wrap {
+        background: black;
+    }
+    #img-header {
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+    }
+  
+    .dropdown-menu{
+        background-color:grey;
+        border-radius: 0px;
+        margin-top: 0px;
+    }
+    .dropdown-menu a:hover{
+        color: #318CE7;
+    }
+    nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+    nav.shift ul li a:hover {
+  color: #91640F;
+}
+
+nav.shift ul li a:after {
+    display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: #000;
+  background: aliceblue;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  transition: all .8s;
+}
+.body-wrap, nav{
+ width: 100vw;
+ position: relative;
+ margin-left: -50vw;
+ left: 50%; 
+}
+
+  
+</style>
+<div class="body-wrap">
+    <div class="header">
+        <h3>
+            <a class="Navbar-brand text-white" href="#">
+                <img src="/images/img.jpg" alt="Best Tutors" id="img-header"> 
+                        Best Tutors
+            </a>
+        </h3>
+        <aside>
+            <div>
+                <div>
+                    <span>
+                        <i class="fa fa-phone fa-1x" aria-hidden="true" 
+                        style="color:white; font-size: 35px;"> 020 8807 4170</i>
+                    </span>
+                </div>
+
+                <span>
+                    <a href='#' style="color:white"> 3-19 Wakefield St Edmonton, N18 2BZ
+                <br>
+                info@besttutors.co.uk</a></span>
+            </div>
+
+        </aside>
+            <div class="pioneer">
+               Pioneers in Tuition
+            </div>
+    </div>
+    
+    <nav style="height: 65px;" class=" shift navigation navbar navbar-expand rounded-bottom">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenuButton" data-toggle="dropdown" 
+                        aria-haspopup="true" aria-expanded="false">Events</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#photos">Photos</a>
+                            <a class="dropdown-item" href="#videos">Videos</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link" href="#subject" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subjects</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <a class="dropdown-item" href="#maths">Maths</a>
+                            <a class="dropdown-item" href="#english">English</a>
+                            <a class="dropdown-item" href="#science">Science</a>
+                            <a class="dropdown-item" href="#french">French</a>
+                            <a class="dropdown-item" href="#accounting">Accounting</a>
+                            <a class="dropdown-item" href="#doubleAward">Double Award</a>
+                            <a class="dropdown-item" href="#coordinatedSciences">Coordinated Sciences</a>
+                            <a class="dropdown-item" href="#humanHealth">Human Healt & Philosophy</a>
+                            <a class="dropdown-item" href="#statistics">Statistics</a>
+                            <a class="dropdown-item" href="#summerCourses">Summer Courses</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#admissions">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#exams">Exams</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#fees">Fees</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pay Online</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Poems</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Charity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Training Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+</div>
