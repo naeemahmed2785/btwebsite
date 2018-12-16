@@ -1,4 +1,3 @@
-
 function setActiveLink(fragmentId) {
     var navBar = document.querySelector(".navbar-nav");
     links = navBar.children;
@@ -13,10 +12,11 @@ function setActiveLink(fragmentId) {
         }
     }
 }
-$(document).ready (function() {
-    $("#divWorldRecord").load("worldRecord.html");
-    $("#divBranches").load("branches.html")
-});
+
+// $(document).ready (function() {
+//     $("#divWorldRecord").load("worldRecord.html");
+//     $("#divBranches").load("branches.html")
+// });
 
 function getContent(fragmentId, callback) {
     var request = new XMLHttpRequest();
@@ -34,6 +34,18 @@ function navigate() {
     fragmentId = location.hash.substr(1)
     getContent(fragmentId, function (content) {
         container.innerHTML = content;
+        $(document).ready(function () {
+
+            $("#divWorldRecord").load("worldRecord.html");
+            $("#divBranches").load("branches.html")
+
+            $(function() {
+                $("#my").click(function() {
+                   $("this").toggleClass("rotate-180");
+                });
+            });
+        
+        });    
     });
     // setActiveLink(fragmentId);
 }
@@ -79,8 +91,3 @@ function getFooter() {
     
     // }
 
-    $(function() {
-        $("#my").click(function() {   
-           $("this").toggleClass("rotate-180");
-        });
-    });
