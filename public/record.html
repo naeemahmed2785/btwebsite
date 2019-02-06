@@ -1,0 +1,152 @@
+<style>
+    .content_record_container .overlay {
+        position: absolute;
+        height: 99%;
+        width: 50%;
+        left: 0;
+        top: 0%;
+        bottom: 0;
+        right: 100%;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+    }
+    .hover01{
+        width:100%;
+    }
+    .content_record_container:hover .overlay {
+        opacity: 1;
+        transform: scale(1.4);
+    }
+    .content_record_container{
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.16);
+        overflow: hidden;
+        margin-right: 15px;
+    }
+    .content_record_container .card_img {
+        width: 300px;
+        height: 200px;
+        border-radius: 50%;
+        border:#252a3b 2px solid;
+    }
+    figure {
+        text-align: center;
+    }
+    .content_record_container:hover .card_img {
+        transform: scale(0.5);
+        position: absolute;
+        transition: all .5s ease-in-out;
+        border: #fff 3px solid;
+
+    }
+
+    .content_record_container:hover .content_record_container-details {
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        height: 100%;
+    }
+
+    .content_record_container-details {
+        background: #252a3b;
+        position: absolute;
+        text-align: center;
+        color: #f0f0f0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        top: 50%;
+        left: -50%;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+        z-index: -1;
+    }
+
+    .content_record_container-details p,
+    h5 {
+        position: relative;
+        top: 30%;
+    }
+</style>
+
+<div class="hover01 row">
+    <div class="content_record_container col">
+        <a href="#wRecord">
+            <div class="overlay"></div>
+            <figure><img class="card_img" src="images/Zulfiqar.jpg" alt="Card image cap"></figure>
+            <div class="content_record_container-details">
+                <h5>Zulfiqar Ali Mansoor</h5>
+                <p>A-Levels</p>
+                <p>6A*, 25A, 3B & 1C</p>
+            </div>
+        </a>
+    </div>
+    <!-- <div class="content_record_container col">
+        <a href="#wRecord">
+            <div class="overlay"></div>
+            <figure><img class="card_img" src="images/Talal-Almas.png" alt="Card image cap" ></figure>
+            <div class="content_record_container-details">
+                <h5>Talal Almas</h5>
+                <p>Year 11</p>
+                <p>22A* & 4A</p>
+
+            </div>
+        </a>
+    </div> -->
+    <div class="content_record_container col">
+        <a href="#wRecord">
+            <div class="overlay"></div>
+            <figure><img class="card_img" src="images/Onaisa.jpg" alt="Card image cap"></figure>
+            <div class="content_record_container-details">
+                    <h5>Onaisa Naing</h5>
+                    <p> GCSE Year 11</p>    
+                    <p>28A* & 3A</p>
+
+            </div>
+        </a>
+    </div>
+</div>
+<div class="hover01 row mt-5">
+    <div class="content_record_container col">
+        <a href="">
+            <div class="overlay"></div>
+            <figure><img class="card_img" src="images/Saifullah.JPG" alt="Card image cap"></figure>
+            <div class="content_record_container-details">
+                <h5>Saifullah Ansari</h5>
+                <p>GCSE Year-10</p>
+                <p>16A* & 11A</p>
+
+            </div>
+        </a>
+    </div>
+    <!-- <div class="content_record_container col">
+        <a href="">
+            <div class="overlay"></div>
+            <figure><img class="card_img" src="images/noimage.JPG" alt="Card image cap" ></figure>
+            <div class="content_record_container-details">
+                <h5>Mahir Said Abdalla</h5>
+                <p>GCSE Year 11</p>
+                <p>33A* & 4A</p>
+
+            </div>
+        </a>
+    </div> -->
+    <div class="content_record_container col">
+        <a href="">
+            <div class="overlay"></div>
+            <figure><img class="card_img" src="images/A1538 YOUSEF MAAIT.JPG" alt="Card image cap" ></figure>
+            <div class="content_record_container-details">
+                <h5>Faiz Tun</h5>
+                <p>GCSE Year8</p>
+                <p>8A*, 4A, 1B & 1PASS </p>
+
+            </div>
+        </a>
+    </div>
+</div>

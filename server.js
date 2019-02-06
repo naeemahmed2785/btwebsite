@@ -12,6 +12,7 @@ var appDir = path.join(__dirname, './public/');
 app.get('*', function (req, res) {
     var fregmentId = req.url.substr(1);
     if(fregmentId) {
+        console.log('in server.js::', fregmentId)
         res.sendFile(path.join(appDir, fregmentId));
     } else {
         res.sendFile(path.join(appDir, "index.html"));

@@ -7,7 +7,6 @@ define('navigation', ['jquery'], function ($) {
         for (var i = 0; i < links.length; i++) {
             var lnk = links[i].children[0];
             var href = lnk.getAttribute("href").substr(1);
-            console.log("substr :", href, lnk);
             if (href === fragmentId) {
                 lnk.setAttribute("class", "active")
             } else {
@@ -24,15 +23,17 @@ define('navigation', ['jquery'], function ($) {
             $(document).ready(function () {
 
                 $("#divWorldRecord").load("worldRecord.html");
-                $("#divBranches").load("branches.html")
-                $("#divTermsConditions").load("terms&Conditions.html")
-
-                $(function () {
-                    $("#my").click(function () {
-                        $("this").toggleClass("rotate-180");
-                    });
+                $("#divBranches").load("branches.html");
+                $("#divTermsConditions").load("terms&Conditions.html");
+                setTimeout(function(){
+                    $('#divRecord').load('record.html');
+                }, 300);
+                $("#collapsed1").click(function(){
+                    console.log("im here")
+                    $(this).toggleClass('arrowUp');
                 });
-
+                $('#divJumbotron').load('jumbotron.html');
+                $('#divNews').load('news.html');
             });
         });
         // _setActiveLink(fragmentId);
@@ -55,3 +56,4 @@ define('navigation', ['jquery'], function ($) {
     }
 
 });
+

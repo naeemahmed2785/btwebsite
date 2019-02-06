@@ -5,6 +5,7 @@ define('headerModule', ['navigation'], function (navigation) {
         navigation.getContent(fregmentId, function (content) {
             container.innerHTML = content;
         })
+     
     }
 
     return {

@@ -1,104 +1,148 @@
-    <nav class="sidebar down navbarNav rounded mt-1">
-        <div class="text-center">
-            <div class="navbar-brand">World Records</div>
-        </div>
-        <div class="accordion" id="accordionExample">
-            <ul class=" accordian sub-menu">
+<style>
+    #accordian {
+        position: relative;
+        width: 100vw;
+        margin-left: -50vw;
+        left: 50%;
+    }
+
+     .Results {
+        width: auto;
+        float: left;
+    } 
+
+    #divRecord {
+        width: auto;
+        min-width: 50%;
+    } 
+    
+    .wRecord {
+        position: relative;
+    }
+
+    .navbar_brand {
+        position: relative;
+        background: #0065b4;
+        color: #fffafa;
+        font-weight: 400;
+        font-size: 22px;
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        width: 100vw;
+        line-height: 75px;
+        margin-left: calc(-50vw + 50% - 8px);
+    }
+    
+</style>
+<div class="wRecord">
+    <div class="navbar_brand">World Records</div>
+</div>
+<div class="sidebar" id="accordian">
+    <div class="row">
+        <div class="col-md-4 col-12 Results">
+            <ul class=" list-group list-group-flush accordian sub-menu">
                 <li><a href="#" data-toggle="collapse" data-target="#A-level" aria-expanded="false" aria-controls="A-level"
-                        id="my" class="collapsed active accordian-heading">
+                        class="collapsed active  accordian-heading" id="collapsed1">
                         <span class="nav-label"> A Level Results </span>
-                        <span class=" fa fa-chevron-down pull-right"  id="collapsed1"></span></a>
-                    <ul id="A-level" class="sub-menu collapse">
-                        <li class="active"><a href="#">A-Level 2018</a></li>
-                        <li><a href="#alevel2017">A-Level 2017</a></li>
-                        <li><a href="#">A-Level 2016</a></li>
-                        <li><a href="#">A-Level 2015</a></li>
-                        <li><a href="#">A-Level 2014</a></li>
-                        <li><a href="#">A-Level 2013</a></li>
-                        <li><a href="#">A-Level 2012</a></li>
+                        <span class=" fa fa-chevron-down pull-right"></span></a>
+                    <ul id="A-level" class="list-group-flush sub-menu collapse" data-parent="#accordian">
+                        <li class="list-group-item"><a href="#">A-Level 2018</a></li>
+                        <li class="list-group-item"><a href="#alevel2017">A-Level 2017</a></li>
+                        <li class="list-group-item"><a href="#">A-Level 2016</a></li>
+                        <li class="list-group-item"><a href="#">A-Level 2015</a></li>
+                        <li class="list-group-item"><a href="#">A-Level 2014</a></li>
+                        <li class="list-group-item"><a href="#">A-Level 2013</a></li>
+                        <li class="list-group-item"><a href="#">A-Level 2012</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="collapsed active" role="button" data-toggle="collapse" data-target="#unbelievable"
-                    id="my" aria-expanded="false" aria-controls="unbelievable">
+                <li><a href="#" class="collapsed " role="button" data-toggle="collapse" data-target="#unbelievable"
+                        aria-expanded="false" aria-controls="unbelievable" id="collapsed1">
                         <span class="nav-label">Unbelievable Results</span>
-                        <span class="fa fa-chevron-down pull-right" id="collapsed1">
+                        <span class="fa fa-chevron-down pull-right">
                         </span></a>
-                    <ul id="unbelievable" class="sub-menu collapse">
-                        <li><a href="#">Unbelievable Results 2018</a></li>
-                        <li><a href="#">Unbelievable Results 2017</a></li>
-                        <li><a href="#">Unbelievable Results 2016</a></li>
-                        <li><a href="#">Unbelievable Results 2015</a></li>
-                        <li><a href="#">Unbelievable Results 2014</a></li>
+                    <ul id="unbelievable" class=" list-group list-group-flush sub-menu collapse" data-parent="#accordian">
+                        <li class="list-group-item"><a href="#">Unbelievable Results 2018</a></li>
+                        <li class="list-group-item"><a href="#">Unbelievable Results 2017</a></li>
+                        <li class="list-group-item"><a href="#">Unbelievable Results 2016</a></li>
+                        <li class="list-group-item"><a href="#">Unbelievable Results 2015</a></li>
+                        <li class="list-group-item"><a href="#">Unbelievable Results 2014</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="collapsed active" role="button" data-toggle="collapse" data-target="#brilliant"
+                <li><a href="#" class="collapsed " role="button" data-toggle="collapse" data-target="#brilliant"
                         aria-expanded="false" aria-controls="brilliant">
                         <span class="nav-label">Brilliant GCSE Students</span>
                         <span class="fa fa-chevron-down pull-right">
                         </span></a>
-                    <ul id="brilliant" class="sub-menu collapse">
-                        <li><a href="#">Brilliant Students 2018</a></li>
-                        <li><a href="#">Brilliant Students 2017</a></li>
-                        <li><a href="#">Brilliant Students 2016</a></li>
-                        <li><a href="#">Brilliant Students 2015</a></li>
-                        <li><a href="#">Brilliant Students 2014</a></li>
+                    <ul id="brilliant" class=" list-group list-group-flush sub-menu collapse" data-parent="#accordian">
+                        <li class="list-group-item"><a href="#">Brilliant Students 2018</a></li>
+                        <li class="list-group-item"><a href="#">Brilliant Students 2017</a></li>
+                        <li class="list-group-item"><a href="#">Brilliant Students 2016</a></li>
+                        <li class="list-group-item"><a href="#">Brilliant Students 2015</a></li>
+                        <li class="list-group-item"><a href="#">Brilliant Students 2014</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="collapsed active" role="button" data-toggle="collapse" data-target="#early"
+                <li><a href="#" class="collapsed " role="button" data-toggle="collapse" data-target="#early"
                         aria-expanded="false" aria-controls="early">
                         <span class="nav-label">Early Achievers</span>
                         <span class="fa fa-chevron-down pull-right">
                         </span></a>
-                    <ul id="early" class="sub-menu collapse">
-                        <li><a href="#">Early Achievers 2018</a></li>
-                        <li><a href="#">Early Achievers 2017</a></li>
-                        <li><a href="#">Early Achievers 2016</a></li>
-                        <li><a href="#">Early Achievers 2015</a></li>
-                        <li><a href="#">Early Achievers 2014</a></li>
+                    <ul id="early" class=" list-group list-group-flush sub-menu collapse" data-parent="#accordian">
+                        <li class="list-group-item"><a href="#">Early Achievers 2018</a></li>
+                        <li class="list-group-item"><a href="#">Early Achievers 2017</a></li>
+                        <li class="list-group-item"><a href="#">Early Achievers 2016</a></li>
+                        <li class="list-group-item"><a href="#">Early Achievers 2015</a></li>
+                        <li class="list-group-item"><a href="#">Early Achievers 2014</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="collapsed active" role="button" data-toggle="collapse" data-target="#elevenPlus"
+                <li><a href="#" class="collapsed " role="button" data-toggle="collapse" data-target="#elevenPlus"
                         aria-expanded="false" aria-controls="elevenPlus">
                         <span class="nav-label">11+ Results</span>
                         <span class="fa fa-chevron-down pull-right">
                         </span></a>
-                    <ul id="elevenPlus" class="sub-menu collapse">
-                        <li><a href="#">11+ Students 2018</a></li>
-                        <li><a href="#">11+ Students 2017</a></li>
-                        <li><a href="#">11+ Students 2016</a></li>
-                        <li><a href="#">11+ Students 2015</a></li>
-                        <li><a href="#">11+ Students 2014</a></li>
+                    <ul id="elevenPlus" class=" list-group list-group-flush sub-menu collapse" data-parent="#accordian">
+                        <li class="list-group-item"><a href="#">11+ Students 2018</a></li>
+                        <li class="list-group-item"><a href="#">11+ Students 2017</a></li>
+                        <li class="list-group-item"><a href="#">11+ Students 2016</a></li>
+                        <li class="list-group-item"><a href="#">11+ Students 2015</a></li>
+                        <li class="list-group-item"><a href="#">11+ Students 2014</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="collapsed active" role="button" data-toggle="collapse" data-target="#sats"
+                <li><a href="#" class="collapsed " role="button" data-toggle="collapse" data-target="#sats"
                         aria-expanded="false" aria-controls="sats">
                         <span class="nav-label">SATs Results</span>
                         <span class="fa fa-chevron-down pull-right">
                         </span></a>
-                    <ul id="sats" class="sub-menu collapse">
-                        <li><a href="#">SATs Year6 2018</a></li>
-                        <li><a href="#">SATs Year6 2017</a></li>
-                        <li><a href="#">SATs Year6 2016</a></li>
-                        <li><a href="#">SATs Year6 2015</a></li>
-                        <li><a href="#">SATs Year6 2014</a></li>
+                    <ul id="sats" class="list-group list-group-flush sub-menu collapse" data-parent="#accordian">
+                        <li class="list-group-item"><a href="#">SATs Year6 2018</a></li>
+                        <li class="list-group-item"><a href="#">SATs Year6 2017</a></li>
+                        <li class="list-group-item"><a href="#">SATs Year6 2016</a></li>
+                        <li class="list-group-item"><a href="#">SATs Year6 2015</a></li>
+                        <li class="list-group-item"><a href="#">SATs Year6 2014</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="collapsed active" role="button" data-toggle="collapse" data-target="#intelligent"
+                <li><a href="#" class="collapsed " role="button" data-toggle="collapse" data-target="#intelligent"
                         aria-expanded="false" aria-controls="intelligent">
                         <span class="nav-label">Intelligent Students</span>
                         <span class="fa fa-chevron-down pull-right">
                         </span></a>
-                    <ul id="intelligent" class="sub-menu collapse">
-                        <li><a href="#intelligent">Intelligent</a></li>
+                    <ul id="intelligent" class="list-group list-group-flush sub-menu collapse" data-parent="#accordian">
+                        <li class="list-group-item"><a href="#intelligent">Intelligent</a></li>
                     </ul>
                 </li>
 
-                <li><a href="#athletic" class="collapsed active" role="button" data-toggle="collapse" data-target="#athletic"
+                <li><a href="#athletic" class="collapsed " role="button" data-toggle="collapse" data-target="#athletic"
                         aria-expanded="false" aria-controls="athletic">
                         <span class="nav-label">Athletic Achievement</span>
                         <span class="fa fa-chevron-down pull-right">
                         </span></a>
+                    <ul id="athletic" class="list-group list-group-flush sub-menu collapse" data-parent="#accordian">
+                        <li class="list-group-item"><a href="#intelligent">Athletic Achievement</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
-    </nav>
+        <div class="col-md-8 container-fluid Results" id="divRecord">
+
+        </div>
+    </div>
+</div>

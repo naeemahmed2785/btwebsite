@@ -1,0 +1,108 @@
+<style>
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto
+  }
+
+  .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 0rem;
+    border-radius: 0;
+    display: flex;
+  }
+
+  .jumbotron ul {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .jumbotron ul li {
+    float: left;
+    text-align: center;
+    margin-right: 40px;
+  }
+
+  .jumbotron ul li a {
+    padding: 14px 16px ;
+    color: #fff;
+    background: #0065b4;
+    text-decoration: none;
+    display: block;
+    border-radius: .25rem;
+    border: 2px solid #fff;
+  }
+  .mission_why-body{
+    width: 50%;
+    height:100%;
+    margin-left: 15px;
+    line-height: 28px;
+    font-size: 18px;
+  }
+  .vision_why-body{
+    width: 50%;
+    height:100%;
+    margin-left: 160px;
+    line-height: 28px;
+    font-size: 18px;
+
+  }
+  .why-choose {
+    margin-left: 290px;
+    display: flex;
+    flex-direction: row wrap;
+    line-height: 28px;
+    font-size: 18px;
+  }
+.img-why {
+  width: 50%;
+  height: 100%;
+  float: right;
+  margin: 0em 0 1em 1em;
+}
+
+</style>
+<div class="jumbotron container-fluid" id="collapse_drop">
+  <div class="container">
+    <ul>
+      <li><a href="#mission" data-toggle="collapse" role="button" aria-expanded="true"
+        aria-controls="mission">Mission</a></li> 
+      <li><a href="#vision" data-toggle="collapse" role="button" aria-expanded="false"
+        aria-controls="vision">Vision</a></li>
+      <li><a href="#why" data-toggle="collapse" aria-expanded="false" aria-controls="why"
+        >Why Best Tutors</a></li>
+    </ul>
+    <div class="row">
+        <div class="collapse show" id="mission" data-parent="#collapse_drop">
+          <div class="mission_why-body" >
+              <p class="text-justify">
+            Our Mission is to commit ourselves to education, enable individuals, institutions and communities to make better informed choices and to broaden their opportunities. 
+            Best Tutors place the tutors at the heart of all operations, ensuring that as members of the institutions, they are people who can in turn help others progress and achieve their full potential.
+            </p>
+          </div>
+        </div>
+        <div class="collapse" id="vision" data-parent="#collapse_drop">
+          <div class="vision_why-body">
+              <p class="text-justify">
+            Our Vision is to strive and raise student’s aspiration and achievement levels by infusing them with enthusiasm for their subjects, self-confidence, motivation and direction.
+            We aspire to excellence and continuous improvement.
+            </p>
+          </div>
+        </div>
+        <div class="collapse" id="why" data-parent="#collapse_drop">
+          <div class="why-choose">
+            <p class="text-justify">
+            <img class="img-why" src="images/why-choose-bt.jpg" alt="why choose best tutors">
+            As the Director of Best Tutors, I work with highly qualified and specialist teachers who undertake to provide a productive and enthusiastic experience in education for the students. 
+            In doing so, all the teachers are committed to provide the academic, social, moral and personal well being development to the students offered in this institution as well as enjoy the caring commitment of all faculty..
+          </p>
+          </div>
+        </div>
+
+  </div>
+</div>
+</div>
